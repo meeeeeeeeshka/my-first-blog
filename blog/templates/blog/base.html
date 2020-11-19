@@ -6,7 +6,9 @@
     </head>
     <body>
    <div class="page-header">
-        <h1><a href="https://drive.google.com/drive/folders/0BxlvkR1sPv5WaVdoRGR0QlJZX00?usp=sharing">IELTS:GET 8.0</a></h1>
+        <h1>
+            {% if user.is_authenticated %}<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>{% endif %}
+        IELTS</h1>
     </div>
     <div class="content container">
         <div class="row">
